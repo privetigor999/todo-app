@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import { Header } from "./components/Header/Header";
-import { Panel } from "./components/Panel/Panel";
-import { TodoList } from "./components/TodoList/TodoList";
-import { ITodo } from "./types/todo";
+import { Header } from "../Header/Header";
+import { Panel } from "../Panel/Panel";
+import { TodoList } from "../TodoList/TodoList";
+import { ITodo } from "../../types/todo";
 import { v4 as uuidv4 } from "uuid";
-import { SelectionBlock } from "./components/SelectionBlock/SelectionBlock";
-import { ReactComponent as GitHub } from "./images/github.svg";
+import { SelectionBlock } from "../SelectionBlock/SelectionBlock";
+import { ReactComponent as GitHub } from "./../../images/github.svg";
 function App() {
   const [todos, setTodos] = React.useState<ITodo[]>([]);
   const [indexBlock, setIndexBlock] = React.useState<number>(0);
@@ -40,7 +40,14 @@ function App() {
 
   return (
     <div className="App">
-      <GitHub className="GitHub" />
+      <a
+        className="GitHub"
+        target="_blank"
+        href="https://github.com/privetigor999/todo-app"
+      >
+        <GitHub />
+      </a>
+
       <Header />
       <Panel addTodo={addTodo} />
       <SelectionBlock

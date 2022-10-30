@@ -16,7 +16,7 @@ export const TodoList: React.FC<TodoListProps> = ({
   removeTodo,
   toggleTodo,
 }) => {
-  if (todos.length === 0) return null;
+  if (!todos.length) return null;
 
   const activeTodos = (todos: ITodo[]): ITodo[] => {
     return todos.filter((todo) => todo.completed === false);

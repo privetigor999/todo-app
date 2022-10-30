@@ -17,7 +17,7 @@ export const Panel: React.FC<PanelProps> = ({ addTodo }) => {
   };
 
   const handleAddTodo = () => {
-    if (inputValue) {
+    if (inputValue.trim()) {
       addTodo(inputValue);
       setInputValue("");
     }
@@ -48,6 +48,7 @@ export const Panel: React.FC<PanelProps> = ({ addTodo }) => {
         className={styles.addBtn}
         onClick={handleAddTodo}
         style={{ opacity: inputValue ? "1" : ".3" }}
+        id="addBtn"
       >
         <img src={plusPng} alt="add" className={styles.addImg} />
       </button>

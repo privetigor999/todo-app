@@ -18,7 +18,11 @@ export const Todo: React.FC<TodoProps> = ({ todo, removeTodo, toggleTodo }) => {
         className={styles.containerTodo}
         style={{ opacity: completed ? "0.4" : "1" }}
       >
-        <button className={styles.doneBtn} onClick={() => toggleTodo(id)}>
+        <button
+          className={styles.doneBtn}
+          onClick={() => toggleTodo(id)}
+          data-testid="toggleBtn"
+        >
           <img
             src={donePng}
             alt="done"
@@ -26,7 +30,11 @@ export const Todo: React.FC<TodoProps> = ({ todo, removeTodo, toggleTodo }) => {
           />
         </button>
         <p className={styles.todoTitle}>{title}</p>
-        <button className={styles.removeBtn} onClick={() => removeTodo(id)}>
+        <button
+          className={styles.removeBtn}
+          onClick={() => removeTodo(id)}
+          data-testid="removeBtn"
+        >
           <Trash className={styles.trashSvg} />
         </button>
       </div>
