@@ -1,0 +1,24 @@
+.App {
+  width: 1000px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #548eaa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.GitHub {
+  width: 30px;
+  position: absolute;
+  right: 170px;
+  top: 20px;
+  fill: #ffffff;
+  cursor: pointer;
+  transition: transform 0.15s ease-in-out;
+}
+.GitHub:hover {
+  transform: scale(120%);
+  fill: rgb(249, 144, 144);
+}

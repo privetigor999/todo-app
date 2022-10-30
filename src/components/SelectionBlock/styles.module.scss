@@ -1,0 +1,35 @@
+.selectionBlock {
+  width: 700px;
+  height: 40px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .selectList {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    :not(li:first-child) {
+      margin-left: 10px;
+    }
+    .activeBlock {
+      border: 1px solid #fff;
+      padding: 0 10px;
+      border-radius: 4px;
+      background-color: #fff;
+      color: #548eaa;
+    }
+  }
+  .notActiveBlock {
+    cursor: pointer;
+    transition: transform 0.15s ease-in-out;
+  }
+  .notActiveBlock:hover {
+    transform: scale(120%);
+  }
+}

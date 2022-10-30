@@ -1,0 +1,44 @@
+.container {
+  position: relative;
+  width: 500px;
+  height: 50px;
+  margin-top: 40px;
+  .input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 0 50px 0 20px;
+  }
+  .addBtn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    right: 5px;
+    border: none;
+    border-radius: 6px;
+    background-color: #548eaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.15s ease-in-out;
+    .addImg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .addBtn:hover {
+    background-color: #7aaec8;
+    transform: scale(110%);
+  }
+  .addBtn:active {
+    background-color: #44728a;
+  }
+  .input::placeholder {
+    color: #548daa5e;
+  }
+}

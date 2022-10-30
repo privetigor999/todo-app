@@ -1,0 +1,71 @@
+.containerTodo {
+  width: 700px;
+  height: 80px;
+  margin-bottom: 6px;
+  background-color: #dad9d9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  .doneBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    transition: transform 0.15s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c2c2c2;
+    .doneImg {
+      width: 24px;
+      height: 24px;
+      opacity: 0;
+    }
+    .toggleImg {
+      width: 24px;
+      height: 24px;
+      opacity: 1;
+    }
+  }
+  .doneBtn:hover {
+    transform: scale(110%);
+    .doneImg {
+      opacity: 0.4;
+    }
+  }
+  .doneBtn:active {
+    .doneImg {
+      opacity: 1;
+    }
+  }
+  .todoTitle {
+    width: 400px;
+    font-size: 24px;
+    overflow-x: scroll;
+    text-align: center;
+  }
+  .removeBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.428);
+    cursor: pointer;
+    transition: transform 0.15s ease-in-out;
+    .trashSvg {
+      width: 24px;
+      height: 24px;
+      fill: white;
+    }
+  }
+  .removeBtn:hover {
+    transform: scale(110%);
+    background-color: rgba(255, 0, 0, 0.631);
+  }
+  .removeBtn:active {
+    background-color: rgba(255, 0, 0, 1);
+  }
+}
