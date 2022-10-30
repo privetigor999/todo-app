@@ -69,3 +69,85 @@
     background-color: rgba(255, 0, 0, 1);
   }
 }
+
+@media screen and (max-width: 767px) {
+  .containerTodo {
+    width: 500px;
+    height: 50px;
+    .doneBtn {
+      width: 30px;
+      height: 30px;
+    }
+    .todoTitle {
+      width: 300px;
+    }
+    .removeBtn {
+      width: 30px;
+      height: 30px;
+      .trashSvg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .containerTodo {
+    width: 400px;
+    padding: 0 30px;
+    .doneBtn {
+      width: 24px;
+      height: 24px;
+      .doneImg {
+        width: 20px;
+        height: 20px;
+      }
+      .toggleImg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .todoTitle {
+      width: 240px;
+    }
+    .removeBtn {
+      width: 24px;
+      height: 24px;
+      .trashSvg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .containerTodo {
+    width: 300px;
+    padding: 0 10px;
+    .doneBtn {
+      width: 24px;
+      height: 24px;
+      .doneImg {
+        width: 20px;
+        height: 20px;
+      }
+      .toggleImg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .todoTitle {
+      width: 200px;
+    }
+    .removeBtn {
+      width: 24px;
+      height: 24px;
+      .trashSvg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

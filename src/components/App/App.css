@@ -1,5 +1,5 @@
 .App {
-  width: 1000px;
+  width: 900px;
   height: 100vh;
   margin: 0 auto;
   background-color: #548eaa;
@@ -11,6 +11,7 @@
 
 .GitHub {
   width: 30px;
+  height: 30px;
   position: absolute;
   right: 170px;
   top: 20px;
@@ -21,4 +22,44 @@
 .GitHub:hover {
   transform: scale(120%);
   fill: rgb(249, 144, 144);
+}
+
+@media screen and (max-width: 900px) {
+  .App {
+    width: 750px;
+  }
+  .GitHub {
+    right: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .App {
+    width: 570px;
+  }
+  .GitHub {
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .App {
+    width: 400px;
+  }
+  .GitHub {
+    right: 20px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .App {
+    width: 300px;
+  }
+  .GitHub {
+    right: 20px;
+    width: 20px;
+    height: 20px;
+  }
 }

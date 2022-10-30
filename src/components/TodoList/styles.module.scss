@@ -4,3 +4,23 @@
   min-height: 400px;
   overflow-y: scroll;
 }
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .container {
+    width: 300px;
+  }
+}

@@ -33,3 +33,33 @@
     transform: scale(120%);
   }
 }
+
+@media screen and (max-width: 767px) {
+  .selectionBlock {
+    width: 500px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .selectionBlock {
+    width: 400px;
+    margin-top: 10px;
+    font-size: 12px;
+    .selectList {
+      :not(li:first-child) {
+        margin-left: 6px;
+      }
+    }
+    .notActiveBlock:hover {
+      transform: scale(110%);
+    }
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .selectionBlock {
+    width: 260px;
+    font-size: 10px;
+  }
+}
